@@ -23,7 +23,7 @@ module.exports = function (injectedStore) {
             user_id: body.user_id,
             film_id: body.film_id,
             cinema_id: body.cinema_id,
-            seats: body.seats,
+            seats_buy: body.seats_buy,
             total: body.total
         }
 

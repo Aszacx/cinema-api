@@ -8,9 +8,8 @@ const router = express.Router()
 
 router.get('/', list)
 router.get('/:id', get)
-router.post('/', upsert)
+router.post('/', secure('pay'), upsert)
 router.put('/', upsert)
-router.post('/payment', secure('pay'), cart)
 
 
 function list (req, res, next) {
@@ -31,14 +30,6 @@ function get (req, res, next) {
 
 function upsert (req, res, next) {
     Controller.upsert(req.body)
-        .then((cart) => {
-            response.success(req, res, cart, 201)
-        })
-        .catch(next)
-}
-
-function cart (req, res, next) {
-    Controller.cart(req.body)
         .then((cart) => {
             response.success(req, res, cart, 201)
         })

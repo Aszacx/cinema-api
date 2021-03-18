@@ -8,10 +8,6 @@ module.exports = function checkAuth(action) {
                 auth.check.own(req, owner)
                 next()
                 break
-            case 'pay':
-                auth.check.logged(req)
-                next()
-                break
             default:
                 next()
         }

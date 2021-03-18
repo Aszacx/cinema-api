@@ -24,18 +24,12 @@ const check = {
     },
     logged: function(req, owner) {
         const decoded = decodeHeader(req)
-        console.log(decoded)
-
-        // Compare is si owner
-        if(decoded.id !== owner) {
-            throw error('No privileges', 401);
-        }
     }
 }
 
 function getToken(auth) {
     if (!auth) {
-        throw error('Token empty', 204)
+        throw error('User not logged', 204)
     }
     if (auth.indexOf('Bearer ') === -1) {
         throw error('Invalid format', 204)
