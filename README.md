@@ -9,11 +9,11 @@
 1. Clone project from this repository.
 2. Generate **.env** file in project root
 > DB_HOST = ""
-DB_USER = ""
-DB_PASSWORD = ""
-DB_DATABASE = ""
-PORT = 5000
-JWT_SECRET = "secret"
+> DB_USER = ""
+> DB_PASSWORD = ""
+> DB_DATABASE = ""
+> PORT = 5000
+> JWT_SECRET = "secret"
 
 3. Install the dependencies: In console (located in the root of the project)
 > npm install
