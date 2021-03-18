@@ -25,4 +25,5 @@ JWT_SECRET = "secret"
 > http://localhost:5000
 
 6. Test movie endpoint
-> http://localhost:5000/api/film
+> Local: http://localhost:5000/api/film
+> Demo: https://cinema-api-exam.herokuapp.com/api/film
