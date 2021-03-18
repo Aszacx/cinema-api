@@ -18,6 +18,9 @@ const app = express()
 app.use(bodyParser.json())
 
 // Router
+app.get('/', function (req, res) {
+    res.send('Api Found!')
+})
 app.use('/api/auth', auth)
 app.use('/api/user', user)
 app.use('/api/cart', cart)
