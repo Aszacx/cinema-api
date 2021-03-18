@@ -1,0 +1,34 @@
+{
+  "name": "cinema-api",
+  "version": "1.0.0",
+  "description": "Cinema ticket flow only for sing up users",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/issac.centeno/cinema-api.git"
+  },
+  "author": "iCenteno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/issac.centeno/cinema-api/issues"
+  },
+  "homepage": "https://gitlab.com/issac.centeno/cinema-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "nanoid": "^3.1.22",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
